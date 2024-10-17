@@ -31,12 +31,19 @@ public class MyFirstVariableAndMethod : MonoBehaviour
         Debug.Log("NEW VALUES: ");
         Debug.Log("a: " + a + " b: " + b + " c: " + c + " d0: " + d0 + " d1: " + d1);
 
+    // Calls swap float method
         (float f0, float f1) = Swap(1.5f, 7.3f);
         Debug.Log("f0: " + f0 + " f1: " + f1);
 
-        (currentAge) IncreaseAge(currentAge);
-        Debug.Log("Age: " + currentAge + agePostIncrease);
-    }   
+    // Calls age increase by one method
+        (currentAge) = IncreaseAgeByOne(currentAge);
+        Debug.Log("Age: " + currentAge);
+
+    // Calls age increase by five method
+        (currentAge) = IncreaseAgeByFive(currentAge);
+        Debug.Log("Age: " + currentAge);
+
+    }
 
     /// <summary>
     /// Swaps two integer values with each other
@@ -65,15 +72,20 @@ public class MyFirstVariableAndMethod : MonoBehaviour
         }
 
     /// <summary>
-    /// aaAAA
+    /// increase currentAge by one
     /// </summary>
-    public static int IncreaseAge(int currentAge, int ageIncrease) {
-        c = currentAge;
-        currentAge++;
-
-        //int agePostIncrease = c + ageIncrease;
-        return (currentAge, ageIncrease);        
+    static int IncreaseAgeByOne(int age)
+    {
+        age++;
+        return (age);
     }
+
+    static int IncreaseAgeByFive(int age)
+    {
+        age = age + 5;
+        return (age);
+    }
+
 
     // Update is called once per frame
     void Update()
@@ -81,4 +93,3 @@ public class MyFirstVariableAndMethod : MonoBehaviour
         
     }
 }
-
