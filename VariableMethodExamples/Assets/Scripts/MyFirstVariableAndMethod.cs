@@ -36,11 +36,11 @@ public class MyFirstVariableAndMethod : MonoBehaviour
         Debug.Log("f0: " + f0 + " f1: " + f1);
 
     // Calls age increase by one method
-        (currentAge) = IncreaseAgeByOne(currentAge);
+        (currentAge) = IncreaseAge(currentAge);
         Debug.Log("Age: " + currentAge);
 
     // Calls age increase by five method
-        (currentAge) = IncreaseAgeByFive(currentAge);
+        (currentAge) = IncreaseAge(currentAge, 5);
         Debug.Log("Age: " + currentAge);
 
     }
@@ -74,15 +74,15 @@ public class MyFirstVariableAndMethod : MonoBehaviour
     /// <summary>
     /// increase currentAge by one
     /// </summary>
-    static int IncreaseAgeByOne(int age)
+    static int IncreaseAge(int age)
     {
         age++;
         return (age);
     }
 
-    static int IncreaseAgeByFive(int age)
+    static int IncreaseAge(int age, int n)
     {
-        age = age + 5;
+        age = age + n;
         return (age);
     }
 
