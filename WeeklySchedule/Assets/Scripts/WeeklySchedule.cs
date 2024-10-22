@@ -5,7 +5,7 @@ using UnityEngine;
 public class WeeklySchedule : MonoBehaviour
 {
     public int day;
-    public float updateInterval = 5.0f; // updatetime interval
+    public float updateInterval = 3.0f; // updatetime interval
     
     // Coroutine to increment days with a longer interval
     IEnumerator UpdateDay() {

@@ -6,7 +6,7 @@ public class WeeklyScheduleArray : MonoBehaviour
 {
     string[] Weekdays = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
 
-    public float updateInterval = 2.0f; // updatetime interval
+    public float updateInterval = 1.0f; // updatetime interval
     
     // Coroutine to increment days with a longer interval
     IEnumerator UpdateDayArray() {
@@ -25,6 +25,7 @@ public class WeeklyScheduleArray : MonoBehaviour
                     Debug.Log ("I feel the freedom. It's " + Weekdays[day]);
                 } else {
                     Debug.Log ("It's " + Weekdays[day] + ". I am afraid because it's Monday tomorrow.");
+                    day = -1;
                 }
 
                 // Delay

@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0ffafcbcbf44264bb092aee7bf6d5de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  updateInterval: 5
+  updateInterval: 2
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -289,7 +289,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   day: 0
-  updateInterval: 2
+  updateInterval: 3
 --- !u!4 &1372671568
 Transform:
   m_ObjectHideFlags: 0
